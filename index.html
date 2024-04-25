@@ -8,15 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /*responsive*/
         @media (min-width: 640px) {
             .responsive-container {
                 min-width: 60rem;
                 max-width: 80rem;
             }
         }
+        section {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        section.hidden {
+            opacity: 0;
+        }
+
+        section.show {
+            opacity: 1;
+        }
+
+        .custom-transition {
+            transform: translateY(20px);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .custom-transition.show {
+            transform: translateY(0);
+        }
     </style>
 </head>
+
 <body>
     <div class="flex justify-center items-center mt-20">
         <button
@@ -30,8 +51,7 @@
             ABOUT
         </button>
     </div>
-
-    <section>
+    <section id="section1">
         <div class="flex flex-col items-center justify-center home responsive-container">
             <div
                 class="flex flex-col items-center justify-center w-full sm:w-1/2 py-8 my-6 border-t border-b border-gray-300">
@@ -45,8 +65,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="flex flex-col items-center justify-center about responsive-container hidden">
+    <section id="section2">
+        <div class="flex flex-col items-center justify-center about responsive-container hidden custom-transition">
             <div
                 class="flex flex-col items-center justify-center w-full sm:w-1/2 py-8 my-6 border-t border-b border-gray-300">
                 <div class="flex flex-col items-center justify-center">
@@ -83,7 +103,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
-
 </body>
 
 </html>
