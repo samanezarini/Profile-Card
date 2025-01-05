@@ -10,12 +10,3 @@ section.hidden {
 section.show {
     opacity: 1;
 }
-
-/* .custom-transition {
-    transform: translateY(20px);
-    transition: transform 0.5s ease-in-out;
-}
-
-.custom-transition.show {
-    transform: translateY(0);
-} */
