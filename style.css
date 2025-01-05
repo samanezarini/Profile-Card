@@ -1,0 +1,28 @@
+@media (min-width: 640px) {
+    .responsive-container {
+        min-width: 60rem;
+        max-width: 80rem;
+    }
+}
+
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section.hidden {
+    opacity: 0;
+}
+
+section.show {
+    opacity: 1;
+}
+
+/* .custom-transition {
+    transform: translateY(20px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-transition.show {
+    transform: translateY(0);
+} */

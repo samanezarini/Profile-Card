@@ -5,52 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samane Zarini</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        @media (min-width: 640px) {
-            .responsive-container {
-                min-width: 60rem;
-                max-width: 80rem;
-            }
-        }
-        section {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
 
-        section.hidden {
-            opacity: 0;
-        }
-
-        section.show {
-            opacity: 1;
-        }
-
-        /* .custom-transition {
-            transform: translateY(20px);
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .custom-transition.show {
-            transform: translateY(0);
-        } */
-    </style>
 </head>
 
 <body>
-    <div class="flex justify-center items-center mt-20">
-        <button
-            class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-blue-600 hover:border-blue-600 mr-4"
-            id="btn-home">
-            HOME
-        </button>
-        <button
-            class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-blue-600 hover:border-blue-600"
-            id="btn-about">
-            ABOUT
-        </button>
-    </div>
+    <header>
+        <div class="flex justify-center items-center mt-20">
+            <button
+                class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-blue-600 hover:border-blue-600 mr-4"
+                id="btn-home">
+                HOME
+            </button>
+            <button
+                class="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-blue-600 hover:border-blue-600"
+                id="btn-about">
+                ABOUT
+            </button>
+        </div>
+    </header>
+
     <section id="section1">
         <div class="flex flex-col items-center justify-center home responsive-container">
             <div
